@@ -4,7 +4,7 @@
 }
 
 .card-text{
-    font-size: 10px;
+    font-size: 12px;
 }
 
 .boton{
@@ -13,7 +13,7 @@
 
 .cuerpoprog{
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-columns: repeat(5,20%);
     grid-template-rows: 90% 10%;
     }
 
@@ -53,12 +53,16 @@
     }
 
 /* Tablet */
-@media (max-width: 800px){
+@media (max-width: 1024px){
 
     .card {
         min-height: 63vh;
         max-height: 63vh;
     }
+
+    .card-text{
+        font-size: 14px;
+    }    
     
     .cuerpoprog{
         display: grid;
@@ -100,12 +104,16 @@
 }
 
 /* Celular */
-@media (max-width: 650px){
+@media (max-width: 512px){
 
     .card {
         min-height: 100vh;
         max-height: 100vh;
     }
+
+    .card-text{
+        font-size: 11px;
+    }    
     
     .cuerpoprog{
         display: grid;

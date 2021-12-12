@@ -32,31 +32,28 @@
         .cabezacont{
             grid-column: 4;
             display: grid;
-            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-columns: repeat(4,25%);;
+        }
+
+        .cabcont{
+            align-self: center;
+            justify-self: center;
         }
 
         .cabcont1{
             grid-column: 1;
-            align-self: center;
-            justify-self: center;
         }
 
         .cabcont2{
             grid-column: 2;
-            align-self: center;
-            justify-self: center;
         }   
 
         .cabcont3{
             grid-column: 3;
-            align-self: center;
-            justify-self: center;
         }
 
         .cabcont4{
             grid-column: 4;
-            align-self: center;
-            justify-self: center;
         }
         
         .contimg{
@@ -119,7 +116,7 @@
         }
 
 /* Tablet */
-@media (max-width: 800px){
+@media (max-width: 1024px){
 
         .logo{
             width: 100px;
@@ -178,7 +175,7 @@
     }
 
 /* Celular */
-@media (max-width: 650px){
+@media (max-width: 512px){
 
     .cuerpo{
         grid-template-rows: 150px 550px 100px 50px;
